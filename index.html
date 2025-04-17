@@ -1,0 +1,209 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A taste of nostalgia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffe4e6, #fffbea);
+      color: #333;
+    }
+
+ body::after {
+      content: '';
+      background: url('https://lh3.googleusercontent.com/pw/AP1GczO6x-9ruurgehthD1c6tmQpTEczkEAoFaOG4haFbaqPZ5OVp7zhYcqehrnEMzlEijGEghtOAvu23NTp_E1RavC6uZt9h-clGA2bWqxqULQRci_WKq5D3xKV7YbM6Upx8CfIg8G7PKf20cCJRlDICboN5g=w819-h605-s-no-gm?authuser=0') no-repeat center;
+      background-size: contain;
+      opacity: 0.05;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      margin: 0;
+      list-style: none;
+    }
+    nav li {
+      margin: 0 1.5em;
+      font-weight: 600;
+    }
+    nav a {
+      text-decoration: none;
+      color: #d6336c;
+      transition: color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      color: #ad1457;
+      transform: scale(1.1);
+    }
+    main {
+      max-width: 1200px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+
+background: #fff;
+      border-radius: 1em;
+      padding: 1em;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 1em;
+      object-fit: cover;
+      height: 200px;
+
+    }
+    .card {
+      background: #fff;
+      border-radius: 1em;
+      padding: 1em;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin-top: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 0.5em;
+    }
+    button {
+      background-color: #f472b6;
+      color: white;
+      padding: 0.8em 2em;
+      border: none;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ec4899;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+ 
+    <ul>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">Our Bakery</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="text-center">
+      <h1>Welcome to A taste of nostalgia</h1>
+
+    <p>Handcrafted treats made with love and the finest ingredients.
+At A taste of nostalgia, we believe the best moments in life start with something sweet. Nestled in the heart of our community, we’ve been handcrafting fresh, small-batch breads, pastries, cakes, and cookies using time-honored recipes and the finest ingredients. Whether you're picking up your morning sourdough, celebrating a special occasion, or just stopping by for a treat, every bite is made with love. </p>
+
+<section id="order">
+Founded with a passion for baking and a heart for hospitality, A taste of nostalgia is more than just a bakery — it’s a place where memories are made, traditions are honored, and the smell of fresh bread always feels like home.
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/84/f2/1e/84f21ef0d8553c58436bd6d415c1313b.jpg" alt="Cupcakes">
+          <h3>Cupcakes</h3>
+          <p>Delicious cupcakes made fresh daily.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/bf/d3/56/bfd3566b9d6a259ed9f5eae153cbb6b0.jpg" alt="Macarons">
+          <h3>Macarons</h3>
+          <p>Colorful, crunchy, chewy, and sweet.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/a2/54/ab/a254ab3176f62d952a39db1c7a2a6a2b.jpg" alt="Cookies">
+          <h3>Cookies</h3>
+          <p>Warm, soft, and chocolatey goodness.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/fd/49/15/fd49150a45f56427ddc5da1da08861f4.jpg" alt="Cakes">
+          <h3>Cakes</h3>
+          <p>Perfect for every celebration.</p>
+        </div>
+
+	 <div class="card">
+          <img src="https://i.pinimg.com/736x/1f/df/04/1fdf0452ad4720366d2a87c60ce974bf.jpg" alt="Smoothies">
+          <h3>Smoothy</h3>
+          <p>Great choice for a healthy drink.</p>
+        </div>
+
+ 	<div class="card">
+          <img src="https://i.pinimg.com/736x/e8/30/c5/e830c57f25c991615bddd730d864d142.jpg" alt="Scone">
+          <h3>Lemon blue berry scones</h3>
+          <p>Perfect for every celebration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Our Bakery</h2>
+      <p>At A taste of nostalgia, we believe in creating memorable experiences through baked goods. Our team of passionate bakers work tirelessly to ensure every treat is perfect.</p>
+      <h3>A Peek Inside</h3>
+      <p>Take a look at the heart of Sweet Crumbs Bakery — where the magic happens.</p>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/736x/01/67/92/016792297340459b7a0ae31ac72d0d70.jpg" alt="Cozy seating area">     
+	
+        <img src="https://i.pinimg.com/736x/16/3d/37/163d37856ab5104bb6af95c30c965fe3.jpg" alt="Bakery counter">
+        <img src="https://i.pinimg.com/736x/e8/1d/8c/e81d8cc846ff6b71f984be1957a0f405.jpg" alt="Display case">
+        <img src="https://i.pinimg.com/736x/22/cf/62/22cf6269670ca9a6a965664e5c8b43c5.jpg" alt="Pastry kitchen">
+        <img src="https://i.pinimg.com/736x/62/b0/af/62b0af7fc1b4d35831f198342e315ce4.jpg" alt="Bread racks">
+        <img src="https://i.pinimg.com/736x/35/21/81/352181c407ae47e1f28a99627206cda4.jpg" alt="Barista station">
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Place an Order</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your Order Details" rows="5" required></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: contact@atasteofnostalgiabakery.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Visit us at: 123 Crumb Street, Pastryville</p>
+    </section>
+  </main>
+</body>
+</html>
